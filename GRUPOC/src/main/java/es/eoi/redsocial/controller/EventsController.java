@@ -4,6 +4,7 @@ import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -15,6 +16,7 @@ import es.eoi.redsocial.entity.Event;
 import es.eoi.redsocial.service.EventService;
 
 @RestController
+@CrossOrigin("http://localhost:4200")
 @RequestMapping(value = "/events")
 public class EventsController {
 
